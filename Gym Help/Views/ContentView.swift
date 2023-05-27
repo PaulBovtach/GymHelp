@@ -14,9 +14,9 @@ struct ContentView: View {
     var body: some View {
         
         TabView{
-            Text("more later...")
+            CalorieCalcView()
                 .tabItem {
-                    Label("Gym guide", systemImage: "book")
+                    Label("Calc", systemImage: "plus.forwardslash.minus")
                 }
             
             CompoundExercisesListView()
