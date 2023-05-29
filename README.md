@@ -49,5 +49,19 @@ Proteins Fats Carbs(**PFT**)
 - F = СМТ × 1.
 - C = (kcal - (P×4 + F×9)) / 4
 
+> I will be very glad if you share this to your friend or even coment this. Thanks 😊
+
+### Images
+
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img1.png" alt= “img1” width="250" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img2.png" alt= “img1” width="250" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img3.png" alt= “img1” width="250" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img4.png" alt= “img1” width="250" height="450">
+
+
+
+
+
+
 
 
