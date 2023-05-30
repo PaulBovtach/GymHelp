@@ -53,10 +53,10 @@ Proteins Fats Carbs(**PFT**)
 
 ### Images
 
-<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img1.png" alt= “img1” width="250" height="450">
-<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img2.png" alt= “img1” width="250" height="450">
-<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img3.png" alt= “img1” width="250" height="450">
-<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img4.png" alt= “img1” width="250" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img1.png" alt= “img1” width="200" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img2.png" alt= “img1” width="200" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img3.png" alt= “img1” width="200" height="450">
+<img src="https://github.com/PaulBovtach/GymHelp/blob/main/img/img4.png" alt= “img1” width="200" height="450">
 
 
 
