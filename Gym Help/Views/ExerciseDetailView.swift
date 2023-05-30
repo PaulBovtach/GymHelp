@@ -42,50 +42,49 @@ struct ExerciseDetailView: View {
                         .fontWeight(.heavy)
                         .padding(.leading, 10)
                     
-                        VStack(alignment: .leading, spacing: 15){
-                            Group{
-                                Text("🪝 Force: \(exercise.force?.rawValue ?? "none")")
-                                Text("🏅 Level: \(exercise.level.rawValue)")
-                                Text("🔗 Mechanic: \(exercise.mechanic?.rawValue ?? "none")")
-                                Text("🦾 Equipment: \(exercise.equipment?.rawValue ?? "none")")
-                                Text("🏋️ Category: \(exercise.category.rawValue)")
-                            }
-                            .fontWeight(.semibold)
-                            .foregroundColor(CustomColor.textBrown)
-                            .font(.title3)
-                            .padding(.leading, 10)
-                            
-                            VStack(alignment: .leading){
-                                
-                                HStack{
-                                    Text("Primary muscles:")
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(CustomColor.textBrown)
-                                        .font(.system(size: 17))
-                                    ForEach(exercise.primaryMuscles, id: \.self){muscle in
-                                        Text("| " + muscle.rawValue + " |")
-                                            .foregroundColor(CustomColor.textBrown)
-                                            .font(.caption)
-                                    }
-                                }
-                                
-                                
-                                HStack{
-                                    Text("Secondary muscles:")
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(CustomColor.textBrown)
-                                        .font(.system(size: 17))
-                                    ForEach(exercise.secondaryMuscles, id: \.self){muscle in
-                                        Text("| " + muscle.rawValue + " |")
-                                            .foregroundColor(CustomColor.textBrown)
-                                            .font(.caption)
-                                    }
-                                }
-                                
-                                
-                            }
-                            .padding(.leading, 10)
+                    VStack(alignment: .leading, spacing: 15){
+                        Group{
+                            Text("🪝 Force: \(exercise.force?.rawValue ?? "none")")
+                            Text("🏅 Level: \(exercise.level.rawValue)")
+                            Text("🔗 Mechanic: \(exercise.mechanic?.rawValue ?? "none")")
+                            Text("🦾 Equipment: \(exercise.equipment?.rawValue ?? "none")")
+                            Text("🏋️ Category: \(exercise.category.rawValue)")
                         }
+                        .fontWeight(.semibold)
+                        .foregroundColor(CustomColor.textBrown)
+                        .font(.title3)
+                        .padding(.leading, 10)
+                        
+                        VStack(alignment: .leading){
+                            
+                            HStack{
+                                Text("Primary muscles:")
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(CustomColor.textBrown)
+                                    .font(.system(size: 17))
+                                ForEach(exercise.primaryMuscles, id: \.self){muscle in
+                                    Text(muscle.rawValue)
+                                        .foregroundColor(CustomColor.textBrown)
+                                        .font(.caption)
+                                }
+                            }
+                            
+                            
+                            
+                        
+                                DisclosureGroup("Secondary muscles") {
+                                    ForEach(exercise.secondaryMuscles, id: \.self){muscle in
+                                        Text(muscle.rawValue)
+                                            .foregroundColor(CustomColor.textBrown)
+                                            .font(.caption)
+                                            .lineLimit(10)
+                                    }
+                                }.padding(.trailing)
+                                
+                            
+                        }
+                        .padding(.leading, 10)
+                    }
                     
                     //HOW TO DO THE EXERCISE???
                     
@@ -108,7 +107,7 @@ struct ExerciseDetailView: View {
                     }
                     
                 }
-                    
+                
             }
             .navigationTitle(exercise.name)
         }
